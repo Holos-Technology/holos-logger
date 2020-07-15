@@ -1,6 +1,9 @@
-const log4js=require("log4js");
+const log4js = require("log4js");
 
-exports.InitLogger = function(app, filename, dirname, config) {
+exports.InitLogger = function (app, filename, dirname, config) {
+  if (!config.logLevel) {
+    config.logLevel = "debug";
+  }
   const pathLength = filename.replace(dirname + "/", "").split("/").length;
   const serviceName = dirname.split("/").pop();
   log4js.configure({
