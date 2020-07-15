@@ -1,0 +1,27 @@
+{
+  "name": "holos-logger",
+  "version": "1.0.0",
+  "description": "Custom logger implementing log4node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Holos-Technology/holos-logger.git"
+  },
+  "keywords": [
+    "logger",
+    "holos",
+    "ehsmart"
+  ],
+  "author": "Luis Soria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Holos-Technology/holos-logger/issues"
+  },
+  "homepage": "https://github.com/Holos-Technology/holos-logger#readme",
+  "dependencies": {
+    "log4js": "^6.3.0"
+  }
+}
