@@ -48,4 +48,10 @@ exports.InitLogger = function (app, filename, dirname, config) {
       );
     return next();
   });
+  app.use(function(req, res, next){
+    res.on('finish', function(){
+      console.log("Ends with ", res.body);
+    });
+    next();
+  });
 };
