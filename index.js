@@ -29,6 +29,7 @@ exports.InitLogger = function (app, filename, dirname, config) {
   });
   const logger = log4js.getLogger(serviceName);
   logger.addContext("Pid", process.pid);
+  logger.addContext("SessionTrace", "no-session-trace-id");
   console.log = logger.info.bind(logger);
   console.error = logger.error.bind(logger);
   console.warn = logger.warn.bind(logger);
